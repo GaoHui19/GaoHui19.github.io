@@ -375,7 +375,32 @@
 
     <div class="carousel-item  white-text bg-cover about-cover">
         <div class="container">
-            <div class="row">
+            <style>
+  .bg-cover.about-cover {
+    overflow: hidden;
+  }
+
+  .banner-container {
+    display: flex;
+    animation: scroll 30s linear infinite; /* Adjust the duration as needed */
+  }
+
+  .banner-image {
+    min-width: 100%;
+    object-fit: cover;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+
+<div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -411,16 +436,62 @@
 </div>
 
 
-<script>
-  function changeBanner() {
+<div class="bg-cover about-cover">
+  <div class="banner-container">
     
-      var bannerUrl = "/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
+      
+        <img class="banner-image" src="/medias/featureimages/1.jpg" alt="Banner 1">
+      
+        <img class="banner-image" src="/medias/featureimages/2.jpg" alt="Banner 2">
+      
+        <img class="banner-image" src="/medias/featureimages/3.jpg" alt="Banner 3">
+      
+        <img class="banner-image" src="/medias/featureimages/4.jpg" alt="Banner 4">
+      
+        <img class="banner-image" src="/medias/featureimages/5.jpg" alt="Banner 5">
+      
+        <img class="banner-image" src="/medias/featureimages/6.jpg" alt="Banner 6">
+      
+        <img class="banner-image" src="/medias/featureimages/7.jpg" alt="Banner 7">
+      
+        <img class="banner-image" src="/medias/featureimages/8.jpg" alt="Banner 8">
+      
+        <img class="banner-image" src="/medias/featureimages/9.jpg" alt="Banner 9">
+      
+        <img class="banner-image" src="/medias/featureimages/10.jpg" alt="Banner 10">
+      
+        <img class="banner-image" src="/medias/featureimages/11.jpg" alt="Banner 11">
+      
+        <img class="banner-image" src="/medias/featureimages/12.jpg" alt="Banner 12">
+      
+        <img class="banner-image" src="/medias/featureimages/13.jpg" alt="Banner 13">
+      
+        <img class="banner-image" src="/medias/featureimages/14.jpg" alt="Banner 14">
+      
+        <img class="banner-image" src="/medias/featureimages/15.jpg" alt="Banner 15">
+      
+        <img class="banner-image" src="/medias/featureimages/16.jpg" alt="Banner 16">
+      
+        <img class="banner-image" src="/medias/featureimages/17.jpg" alt="Banner 17">
+      
+        <img class="banner-image" src="/medias/featureimages/18.jpg" alt="Banner 18">
+      
+        <img class="banner-image" src="/medias/featureimages/19.jpg" alt="Banner 19">
+      
+        <img class="banner-image" src="/medias/featureimages/20.jpg" alt="Banner 20">
+      
+        <img class="banner-image" src="/medias/featureimages/21.jpg" alt="Banner 21">
+      
+        <img class="banner-image" src="/medias/featureimages/22.jpg" alt="Banner 22">
+      
+        <img class="banner-image" src="/medias/featureimages/23.jpg" alt="Banner 23">
+      
+        <img class="banner-image" src="/medias/featureimages/24.jpg" alt="Banner 24">
+      
     
-    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
-  }
-  changeBanner(); // 初始加载
-  setInterval(changeBanner, 3000); // 每3秒切换一次
-</script>
+  </div>
+</div>
+
 
 
             <div class="cover-btns">
