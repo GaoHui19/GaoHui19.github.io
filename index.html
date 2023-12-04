@@ -375,96 +375,122 @@
 
     <div class="carousel-item  white-text bg-cover about-cover">
         <div class="container">
-            
+            <style>
+  .bg-cover-content {
+    overflow: hidden;
+  }
+
+  .banner-container {
+    display: flex;
+    /* 让子元素撑满容器 */
+    width: 300%; /* 如果有3张图片，设置为300%，以此类推 */
+    animation: scroll 30s linear infinite;
+  }
+
+  .banner-image {
+    width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
 
 <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
+  <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+    <div class="brand">
+      <div class="title center-align">
+        
+        subtitle
+        
+      </div>
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
+      <div class="description center-align">
+        
+        <span id="subtitle"></span>
+        <script src="/libs/typed/typed.js"></script>
+        <script>
+          var typed = new Typed("#subtitle", {
+            strings: [
+              
+                "从来没有真正的绝境, 只有心灵的迷途",
+              
+                "Never really desperate, only the lost of the soul",
+              
+            ],
+            startDelay: 300,
+            typeSpeed: 100,
+            loop: true,
+            backSpeed: 50,
+            showCursor: true
+          });
+        </script>
+        
+      </div>
     </div>
+  </div>
 </div>
 
 
-<div class="bg-cover about-cover">
+<div class="bg-cover-content">
   <div class="banner-container">
     
-      
-        <img class="banner-image" src="/medias/featureimages/1.jpg" alt="Banner 1">
-      
-        <img class="banner-image" src="/medias/featureimages/2.jpg" alt="Banner 2">
-      
-        <img class="banner-image" src="/medias/featureimages/3.jpg" alt="Banner 3">
-      
-        <img class="banner-image" src="/medias/featureimages/4.jpg" alt="Banner 4">
-      
-        <img class="banner-image" src="/medias/featureimages/5.jpg" alt="Banner 5">
-      
-        <img class="banner-image" src="/medias/featureimages/6.jpg" alt="Banner 6">
-      
-        <img class="banner-image" src="/medias/featureimages/7.jpg" alt="Banner 7">
-      
-        <img class="banner-image" src="/medias/featureimages/8.jpg" alt="Banner 8">
-      
-        <img class="banner-image" src="/medias/featureimages/9.jpg" alt="Banner 9">
-      
-        <img class="banner-image" src="/medias/featureimages/10.jpg" alt="Banner 10">
-      
-        <img class="banner-image" src="/medias/featureimages/11.jpg" alt="Banner 11">
-      
-        <img class="banner-image" src="/medias/featureimages/12.jpg" alt="Banner 12">
-      
-        <img class="banner-image" src="/medias/featureimages/13.jpg" alt="Banner 13">
-      
-        <img class="banner-image" src="/medias/featureimages/14.jpg" alt="Banner 14">
-      
-        <img class="banner-image" src="/medias/featureimages/15.jpg" alt="Banner 15">
-      
-        <img class="banner-image" src="/medias/featureimages/16.jpg" alt="Banner 16">
-      
-        <img class="banner-image" src="/medias/featureimages/17.jpg" alt="Banner 17">
-      
-        <img class="banner-image" src="/medias/featureimages/18.jpg" alt="Banner 18">
-      
-        <img class="banner-image" src="/medias/featureimages/19.jpg" alt="Banner 19">
-      
-        <img class="banner-image" src="/medias/featureimages/20.jpg" alt="Banner 20">
-      
-        <img class="banner-image" src="/medias/featureimages/21.jpg" alt="Banner 21">
-      
-        <img class="banner-image" src="/medias/featureimages/22.jpg" alt="Banner 22">
-      
-        <img class="banner-image" src="/medias/featureimages/23.jpg" alt="Banner 23">
-      
-        <img class="banner-image" src="/medias/featureimages/24.jpg" alt="Banner 24">
-      
+    
+    <img class="banner-image" src="/medias/featureimages/1.jpg" alt="Banner 1">
+    
+    <img class="banner-image" src="/medias/featureimages/2.jpg" alt="Banner 2">
+    
+    <img class="banner-image" src="/medias/featureimages/3.jpg" alt="Banner 3">
+    
+    <img class="banner-image" src="/medias/featureimages/4.jpg" alt="Banner 4">
+    
+    <img class="banner-image" src="/medias/featureimages/5.jpg" alt="Banner 5">
+    
+    <img class="banner-image" src="/medias/featureimages/6.jpg" alt="Banner 6">
+    
+    <img class="banner-image" src="/medias/featureimages/7.jpg" alt="Banner 7">
+    
+    <img class="banner-image" src="/medias/featureimages/8.jpg" alt="Banner 8">
+    
+    <img class="banner-image" src="/medias/featureimages/9.jpg" alt="Banner 9">
+    
+    <img class="banner-image" src="/medias/featureimages/10.jpg" alt="Banner 10">
+    
+    <img class="banner-image" src="/medias/featureimages/11.jpg" alt="Banner 11">
+    
+    <img class="banner-image" src="/medias/featureimages/12.jpg" alt="Banner 12">
+    
+    <img class="banner-image" src="/medias/featureimages/13.jpg" alt="Banner 13">
+    
+    <img class="banner-image" src="/medias/featureimages/14.jpg" alt="Banner 14">
+    
+    <img class="banner-image" src="/medias/featureimages/15.jpg" alt="Banner 15">
+    
+    <img class="banner-image" src="/medias/featureimages/16.jpg" alt="Banner 16">
+    
+    <img class="banner-image" src="/medias/featureimages/17.jpg" alt="Banner 17">
+    
+    <img class="banner-image" src="/medias/featureimages/18.jpg" alt="Banner 18">
+    
+    <img class="banner-image" src="/medias/featureimages/19.jpg" alt="Banner 19">
+    
+    <img class="banner-image" src="/medias/featureimages/20.jpg" alt="Banner 20">
+    
+    <img class="banner-image" src="/medias/featureimages/21.jpg" alt="Banner 21">
+    
+    <img class="banner-image" src="/medias/featureimages/22.jpg" alt="Banner 22">
+    
+    <img class="banner-image" src="/medias/featureimages/23.jpg" alt="Banner 23">
+    
+    <img class="banner-image" src="/medias/featureimages/24.jpg" alt="Banner 24">
+    
     
   </div>
 </div>
